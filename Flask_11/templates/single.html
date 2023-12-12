@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ candidate.name }}</title>
+</head>
+<body>
+    {% if candidate %}
+    <h1>{{ candidate.name }}</h1>
+    <p>{{ candidate.position }}</p>
+    <img src="{{ candidate.picture }}" width=200/>
+    <p>{{ candidate.skills }}</p>
+    {% else %}
+    <h1>Кандидат не найден</h1>
+    {% endif %}
+</body>
+</html>
